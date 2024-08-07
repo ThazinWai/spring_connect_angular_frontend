@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px; 
+    border: 1px solid; 
+  }
+  
+  .reddit-icon-svg {
+    height: 50px;
+    padding: 8px 8px 8px 0;
+    width: 50px;
+  }
+  
+  .reddit-text {        
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px; 
+    width: auto; 
+  }
+  
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .login, .sign-up {    
+    background-color: transparent;
+    border-color: #0079D3;
+    color: #0079D3;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  .sign-up {
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.6;
+  }
+  
+  .account-icon {
+    border-radius: 4px;
+    float: left;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+  }
+  
+  /* Adjusted class for Flexbox layout */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Optional: centers items vertically */
+    width: 100%; /* Ensure it takes the full width */
+  }
+  
+  .flex-grow-1 {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .float-right {
+    margin-left: auto; /* Pushes the flex-grow-1 container to the right */
+  }
+  
