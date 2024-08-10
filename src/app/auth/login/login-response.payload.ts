@@ -1,6 +1,6 @@
 export interface LoginResponsePayload{
     authenticationToken: string;
-    // refreshToken: string;
-    // expiresAt: Date;
+    refreshToken: string;
+    expiresAt: Date;
     username: string;
 }
