@@ -1,1 +1,50 @@
-<p>home works!</p>
+<div class="container home-container">
+  <div class="row">
+    <div class="col-md-9">
+      <div *ngFor="let post of posts" class="row post">
+        <div class="col-md-1 vote-column">
+          <!-- <app-vote-button [post]="post"></app-vote-button> -->
+        </div>
+        <div class="col-md-11">
+          <div class="post-header">
+            <span class="subreddit-text">
+              <a class="post-url" [routerLink]="['/subreddit', post.subredditName]">{{post.subredditName}}</a>
+            </span>
+            <span class="post-details"> &bull; Posted {{post.duration}} by 
+              <a class="username" [routerLink]="['/user', post.userName]">{{post.userName}}</a>
+            </span>
+          </div>
+          <hr />
+          <a [routerLink]="post.url" class="post-title">{{post.postName}}</a>
+          <div class="post-description">
+            <p [innerHtml]="post.description"></p>
+          </div>
+          <div class="post-comment">
+            <!-- <form [formGroup]="commentForm" (ngSubmit)="postComment()">
+              <div class="form-group">
+                <textarea class="form-control" formControlName="text" placeholder="Your Thoughts?"></textarea>
+              </div>
+              <button type="submit" class="login float-right">Comment</button>
+            </form> -->
+          </div>
+          <!-- <div class="post-comments" *ngFor="let comment of post.comments">
+            <div class="comment">
+              <div class="comment-header">
+                <a [routerLink]="['/user', comment.userName]" class="username">{{comment.userName}}</a>
+                <span class="comment-duration">{{comment.duration}}</span>
+              </div>
+              <div class="comment-text">
+                <p>{{comment.text}}</p>
+              </div>
+            </div>
+            <hr />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <!-- <app-side-bar></app-side-bar>
+      <app-subreddit-side-bar></app-subreddit-side-bar> -->
+    </div>
+  </div>
+</div>
